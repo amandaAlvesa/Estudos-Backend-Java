@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\amand\Downloads\eclipse\codigo\Estudos-Back\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+635242318.index
+3203706709.index

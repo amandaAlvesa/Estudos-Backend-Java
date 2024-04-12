@@ -1,0 +1,12 @@
+package service;
+
+public class TaxService {
+
+	public double fee(String state) {
+		if(state.equalsIgnoreCase("SP")) {
+			return 10.0;
+		}
+		
+		return 20.0;
+	}
+}
