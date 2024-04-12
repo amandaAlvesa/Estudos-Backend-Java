@@ -2,7 +2,7 @@ package service;
 
 public class DeliverService {
 
-	public double deliver(String state) {
+	public Double deliver(String state) {
 		if(state.equalsIgnoreCase("SP")) {
 			return 10.0;
 		}
