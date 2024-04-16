@@ -2,16 +2,29 @@ package com.injecao;
 
 import java.util.List;
 
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@SpringBootApplication
 public class InjecaoDependenciaAula2Application {
 
 	public static void main(String[] args) {
 
-		new MigracaoUsuarios(
-				new FileReader(), new BDWritter()
-				).migrar();
+		SpringApplication.run(InjecaoDependenciaAula2Application.class, args);
+	}
+	
+	@Bean
+	ApplicationRunner runner(MigracaoUsuarios user) {
+		return args -> {
+			user.migrar();
+		};
 	}
 }
 
+@Component
 class MigracaoUsuarios{
 
 	public MigracaoUsuarios(Reader<User> reader, Writer<User> writer) {
@@ -41,6 +54,7 @@ interface Writer<T>{
 	void write(List<T> itens);
 }
 
+@Component
 class FileReader implements Reader<User>{
 	public List<User> read(){
 		System.out.println("lendo user do arquivo...");
@@ -48,6 +62,8 @@ class FileReader implements Reader<User>{
 	}
 }
 
+
+@Component
 class BDWritter implements Writer<User>{
 	public void write(List<User> user) {
 		System.out.println("Escrevendo Users no Banco..");
