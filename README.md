@@ -1,4 +1,10 @@
-O Que Estudar:![Tópicos](https://github.com/amandaAlvesa/Estudos-Backend/assets/108950028/784def98-a6e4-48bb-83f6-d298e77bcc30)
+O Que Estudar: 
+
+
+
+
+
+![Tópicos](https://github.com/amandaAlvesa/Estudos-Backend-Java/assets/108950028/c61d9947-e30d-42c6-a6af-17b139e048c8)
 
 
 
