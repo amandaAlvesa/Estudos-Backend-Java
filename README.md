@@ -35,3 +35,25 @@ O Que Estudar:
   
     Conclusão: 
       A Injeção de Depêndencias ajuda no baixo acoplamento e na manutenção do código;
+
+2 - Estruturação de Projetos, Camadas:
+    
+    Alguns tipos de Camadas:
+        Camada de Apresentação - interface gráfica.
+        Camada de Negócios - lógica de negócios do sistema. 
+        Camada de Persistência - salva o estado do objeto em algum lugar.
+        
+    Projeto em duas camadas:
+        Camada Cliente: apresentação e da lógica de negócios;
+        Camada Servidor: persistência de dados(SGBD).
+        problemas na manutenção e falta de escalabilidade eram comuns.
+        
+    Projeto em três camadas:
+        Camada de aplicação;
+        Camada de persistência 
+        Camada de apresentação;.
+    
+
+///lugares de estudo\\\
+https://www.devmedia.com.br/construindo-projetos-em-camadas-usando-java/6418
+https://www.youtube.com/watch?v=ta0q7OrVxIc
