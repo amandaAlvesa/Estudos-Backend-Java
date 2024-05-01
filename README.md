@@ -11,7 +11,7 @@ O Que Estudar:
 1- Injeção de Dependencias:
 
     O que é: 
-      Objetos que fornecem depêndencias a outros objectos, depêndecia é um objeto que pode ser usado;
+      Objetos que fornecem depêndencias a outros objectos, depêndecia é um objeto que pode ser usado, sem acoplamento;
     
     Framework: 
       Principal responsável por injetar depêndencias em componentes declarados com @Component, como SpringBoot;
@@ -57,3 +57,5 @@ O Que Estudar:
 ///lugares de estudo\\\
 https://www.devmedia.com.br/construindo-projetos-em-camadas-usando-java/6418
 https://www.youtube.com/watch?v=ta0q7OrVxIc
+https://www.devmedia.com.br/camadas-em-aplicacoes-java-ee/26714
+https://metal-flea-041.notion.site/LIVE-Arquitetura-Limpa-com-Java-232f8dd937d244069f160c9360c00761
