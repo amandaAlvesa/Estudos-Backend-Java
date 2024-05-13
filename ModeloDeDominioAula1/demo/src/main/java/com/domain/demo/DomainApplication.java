@@ -1,23 +1,23 @@
-package com.domain;
+package com.domain.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.domain.entities.Client;
-import com.domain.entities.Product;
-import com.domain.repositorie.ClientRepository;
-import com.domain.repositorie.ProductRepository;
+import com.domain.demo.entities.Client;
+import com.domain.demo.entities.Product;
+import com.domain.demo.repositorie.ClientRepository;
+import com.domain.demo.repositorie.ProductRepository;
 
 @SpringBootApplication
 public class DomainApplication implements CommandLineRunner{
 
 	@Autowired
-	private ClientRepository clientRepositorie;
+	private ProductRepository productRepositorie;
 	
 	@Autowired
-	private ProductRepository productRepository;
+	private ClientRepository clientRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DomainApplication.class, args);
@@ -26,14 +26,12 @@ public class DomainApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Client c1 = new Client(null, "amanda", "amanda@gmail.com");
-		clientRepositorie.save(c1);
+		Client c1 = new Client(null, "amanda");
+		Product p1 = new Product(null, "mouse", 30.0);
 		
-		Product p1 = new Product(null, "Mouse", 30.0);
-		productRepository.save(p1);
+		productRepositorie.save(p1);
+		clientRepository.save(c1);
 		
 	}
-	
-	
 
 }

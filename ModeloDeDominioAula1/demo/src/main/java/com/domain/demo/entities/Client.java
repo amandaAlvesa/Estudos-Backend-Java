@@ -1,4 +1,4 @@
-package com.domain.entities;
+package com.domain.demo.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,11 +17,10 @@ import lombok.Setter;
 @Table(name = "tb_client")
 @Entity
 public class Client {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	private String name;
-	private String email;
-
 }
