@@ -1,11 +1,17 @@
-O Que Estudar:![Tópicos](https://github.com/amandaAlvesa/Estudos-Backend/assets/108950028/784def98-a6e4-48bb-83f6-d298e77bcc30)
+O Que Estudar: 
+
+
+
+
+
+![Tópicos](https://github.com/amandaAlvesa/Estudos-Backend-Java/assets/108950028/c61d9947-e30d-42c6-a6af-17b139e048c8)
 
 
 
 1- Injeção de Dependencias:
 
     O que é: 
-      Objetos que fornecem depêndencias a outros objectos, depêndecia é um objeto que pode ser usado;
+      Objetos que fornecem depêndencias a outros objectos, depêndecia é um objeto que pode ser usado, sem acoplamento;
     
     Framework: 
       Principal responsável por injetar depêndencias em componentes declarados com @Component, como SpringBoot;
@@ -29,3 +35,27 @@ O Que Estudar:![Tópicos](https://github.com/amandaAlvesa/Estudos-Backend/assets
   
     Conclusão: 
       A Injeção de Depêndencias ajuda no baixo acoplamento e na manutenção do código;
+
+2 - Estruturação de Projetos, Camadas:
+    
+    Alguns tipos de Camadas:
+        Camada de Apresentação - interface gráfica.
+        Camada de Negócios - lógica de negócios do sistema. 
+        Camada de Persistência - salva o estado do objeto em algum lugar.
+        
+    Projeto em duas camadas:
+        Camada Cliente: apresentação e da lógica de negócios;
+        Camada Servidor: persistência de dados(SGBD).
+        problemas na manutenção e falta de escalabilidade eram comuns.
+        
+    Projeto em três camadas:
+        Camada de aplicação;
+        Camada de persistência 
+        Camada de apresentação;.
+    
+
+///lugares de estudo\\\
+https://www.devmedia.com.br/construindo-projetos-em-camadas-usando-java/6418
+https://www.youtube.com/watch?v=ta0q7OrVxIc
+https://www.devmedia.com.br/camadas-em-aplicacoes-java-ee/26714
+https://metal-flea-041.notion.site/LIVE-Arquitetura-Limpa-com-Java-232f8dd937d244069f160c9360c00761
